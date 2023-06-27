@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -18,7 +17,7 @@
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
@@ -62,6 +61,7 @@ $dark: $gray-800;
 $navbar-dark-hover-color: rgba($white,1);
 $breadcrumb-divider: quote(">");
 $enable-rounded: false;
+$border-radius-base: 0;
 $body-bg: $gray-100;
 $breadcrumb-divider-color: $gray-800;
 $breadcrumb-active-color: $gray-800;
@@ -72,11 +72,12 @@ $border-color: $gray-400;
 $card-border-color: $gray-400;
 $pagination-border-color: $gray-400;
 $list-group-border-color: $gray-400;
-$link-hover-color: darken($blue, 10%);
+$link-hover-color: darken($blue, 20%);
 $breadcrumb-padding-y: 0.25rem;
 $breadcrumb-item-padding: 0.5rem;
 
 // Required
+/*
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
@@ -87,41 +88,41 @@ $breadcrumb-item-padding: 0.5rem;
 @import "bootstrap/scss/reboot";
 
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
+@import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/alert";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
-// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
-// @import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/placeholders";
 
 // Helpers
 // @import "bootstrap/scss/helpers";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
-
+*/
 
 //
 // Custom styles
@@ -129,6 +130,102 @@ $breadcrumb-item-padding: 0.5rem;
 
 @import "icon-list";
 
+/*
 body {
   padding: 1.5rem;
+}
+*/
+
+a {
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar nav {
+  width: 100%;
+}
+.sidebar nav .dropdown.nav-item:has(.dropdown-menu.show) {
+  font-weight: 700;
+}
+.sidebar nav .dropdown-menu.show {
+  border: 0 solid transparent;
+  display: block;
+  position: relative !important;
+  transform: none !important;
+  width: 100%;
+}
+.sidebar nav .dropdown-menu.show a.dropdown-item {
+  display: block;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 99;
+  outline: none;
+  color: #ffffff;
+  background-color: rgba(0, 120, 212,.65);
+  border: 0px solid transparent;
+  cursor: pointer;
+  padding: .65rem 1rem;
+  border-radius: .2rem;
+}
+
+.is-visible {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.icon-link {
+  display: block;
+}
+@include media-breakpoint-down(lg) {
+  .icon-link {
+    display: inline-flex;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .icon-link {
+    display: block;
+  }
+}
+
+#navbar-main {
+  height: 6rem;
+}
+#navbar-logo-area {
+  height: 6rem;
+  display: block;
+  background-color: transparent;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center, 50%, 50%;
+}
+@include media-breakpoint-down(md) {
+  #navbar-main,
+  #navbar-logo-area {
+    height: 5rem;
+  }
+}
+@include media-breakpoint-down(sm) {
+  #navbar-main {
+    height: 8rem;
+  }
+  #navbar-logo-area {
+    height: 4rem;
+    background-size: contain;
+  }
+}
+
+#navbar-site-name {
+  font-family: Abel, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }

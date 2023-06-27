@@ -1,75 +1,495 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Bootstrap Sass &amp; JS</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
 
-      <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
-        <h1 class="h4">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bootstrap-fill d-inline-block me-2" viewBox="0 0 16 16">
-              <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
-              <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
-            </svg>
-            <span>Sass &amp; JS</span>
-          </a>
-        </h1>
-        <a href="https://github.com/twbs/examples/tree/main/sass-js/" target="_blank" rel="noopener">View on GitHub</a>
-      </header>
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+    prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
 
-      <h1>Get started with Bootstrap</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-4">You've successfully loaded up a Bootstrap example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a> and tooling for compiling our Sass and JavaScript to your needs.</p>
-        <p>If this button appears blue and the link appears purple, you've done it!</p>
-      </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="title" content="Wink" />
+    <meta name="description" content="A theme suitable for a business portal" />
+    <meta name="keywords" content="business, portal" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="barberod" />
 
-      <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
-      <a id="popoverButton" class="text-success" href="#" role="button" data-bs-toggle="popover" title="Custom popover" data-bs-content="This is a Bootstrap popover.">Example popover</a>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
+    <title>Wink</title>
+    <link href="../css/styles.css"rel="stylesheet" />
+
+    <!-- Google Fonts: Abel, Roboto, Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d781e20338.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="top" class="bg-light">
+    <a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+
+        <header id="navbar-main" class="navbar navbar-main bg-white border-bottom sticky-top flex-md-nowrap p-0">
+
+            <a id="navbar-logo-area"
+                class="navbar-brand col-12 col-sm-4 col-md-3 col-xl-2 me-0 border-end d-flex justify-content-start justify-content-start justify-content-start"
+                href="https://www.barberod.com">
+                <div id="navbar-logo" class="w-100 mx-2">&nbsp;</div>
+            </a>
+
+            <div id="navbar-site-name" class="col-10 col-sm-4 fs-4 ms-0 me-auto py-2 py-sm-0 px-4">Business Portal</div>
+
+            <div class="navbar-nav d-none d-md-block">
+                <div class="nav-item text-nowrap">
+                    <a class="nav-link px-3" href="https://www.barberod.com">Service Status<i class="fa-solid fa-external-link ms-2"></i></a>
+                </div>
+            </div>
+
+            <button class="navbar-toggler d-md-none me-4 collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="scrollToTop()">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+
+        </header>
+
+        <div class="container-fluid">
+            <div class="row d-flex">
+
+                <!-- Sidebar -->
+                <nav id="sidebarMenu" class="col-md-3 col-xl-2 d-md-block border-end bg-white sidebar collapse">
+                    <div class="position-sticky pt-4 sidebar-sticky px-0 d-flex align-items-start flex-column h-100">
+
+                        <nav role="navigation" class="mb-auto">
+
+                            <ul class="nav navbar-nav flex-column">
+                                <li class="dropdown nav-item">
+                                    <a class="nav-link dropdown-btn" id="dropdown-learning" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa-solid fa-chalkboard-teacher fa-fw me-2"></i>Learning</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-learning">
+                                        <a class="dropdown-item" href="https://www.barberod.com" target="_blank">Canvas</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown nav-item">
+                                    <a class="nav-link dropdown-btn" id="dropdown-calendar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa-solid fa-calendar-alt fa-fw me-2"></i>Calendars</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-calendars">
+                                        <a class="dropdown-item" href="https://www.barberod.com" target="_blank">Academic Calendar</a>
+                                        <a class="dropdown-item" href="https://www.barberod.com" target="_blank">Five-Term Tentative<br>Institute Calendar</a>
+                                        <a class="dropdown-item" href="https://www.barberod.com" target="_blank">Final Exam Matrices</a>
+                                        <a class="dropdown-item" href="https://www.barberod.com" target="_blank">Campus Calendar</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown nav-item">
+                                    <a class="nav-link dropdown-btn" id="dropdown-office365" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fab fa-microsoft fa-fw me-2"></i>Office 365</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-office365">
+                                        <a class="dropdown-item" href="https://outlook.office365.com/owa/?realm=gatech.edu" target="_blank">Outlook</a>
+                                        <a class="dropdown-item" href="https://www.office.com/launch/word?auth=2" target="_blank">Word</a>
+                                        <a class="dropdown-item" href="https://www.office.com/launch/excel?auth=2" target="_blank">Excel</a>
+                                        <a class="dropdown-item" href="https://www.office.com/launch/powerpoint?auth=2" target="_blank">PowerPoint</a>
+                                        <a class="dropdown-item" href="https://www.office.com/launch/onenote?auth=2" target="_blank">OneNote</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                        <div class="sidebar-bottom pt-3">
+                            <div class="sidebar-heading text-uppercase"><small>Did you know?</small></div>
+                            <p class="text-muted mb-4">ChipTest, Hydra, Deep Blue, and HiTech are all computers or computer programs developed to play chess.</p>
+                        </div>
+
+                    </div>
+                </nav>
+                <!-- end of sidebar -->
+
+                <!-- Main -->
+                <div class="col-md-9 ms-sm-auto col-xl-10 px-0 d-flex flex-column h-100 mt-4 mt-sm-0">
+
+                    <main id="main" class="d-flex p-4">
+
+                        <div class="container-fluid px-0">
+                            <div class="row cleafix g-0">
+
+                                <div class="col-12">
+                                    <section class="row region region-top-header">
+                                        <div class="block-page-title-block">
+                                            <div class="content">
+                                                <h1 class="title border-bottom border-dark pb-3 mb-4">Wink</h1>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="main-content w-100" id="content" role="main">
+                                        <section class="section">
+                                            <a id="main-content" tabindex="-1"></a>
+                                            <div class="content">
+                                                
+                                                <div class="row">
+                                                    <!-- Left side -->
+                                                    <div class="col-12 col-lg-6 d-flex flex-column">
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Registration/SIS
+                                                            </h2>
+                                                            <div class="card-body">
+                                                                <div class="row row-cols-2 row-cols-xl-4 g-5 text-center">
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-unlock-alt fa-2x mb-2"></i><br><small>Secure Access Login</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-calendar-week fa-2x mb-2"></i><br><small>Schedule of Classes</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-list-alt fa-2x mb-2"></i><br><small>Course Details</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-balance-scale fa-2x mb-2"></i><br><small>Transfer Equivalen<span style="white-space: nowrap;">cies</span></small>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Policies, Curriculum, and Services
+                                                            </h2>
+                                                            <div class="card-body">
+                                                                <div class="row row-cols-2 row-cols-xl-4 g-5 text-center">
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-book fa-2x mb-2"></i><br><small>Georgia Tech Catalog</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-tasks fa-2x mb-2"></i><br><small>Course Evalutions</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-file-alt fa-2x mb-2"></i><br><small>Order a Transcript</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-laptop fa-2x mb-2"></i><br><small>BuzzPort</small>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Identity Management
+                                                            </h2>
+                                                            <div class="card-body">
+                                                                <div class="row row-cols-2 row-cols-xl-4 g-5 text-center">
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-passport fa-2x mb-2"></i><br><small>Passport</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-hashtag fa-2x mb-2"></i><br><small>gtID#</small>
+                                                                    </a>
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-id-card fa-2x mb-2"></i><br><small>BuzzCard</small>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Learning Management System
+                                                            </h2>
+                                                            <div class="card-body">
+                                                                <div class="row row-cols-2 row-cols-xl-4 g-5 text-center">
+                                                                    <a class="col icon-link" href="https://www.barberod.com" target="_blank">
+                                                                        <i class="fa-solid fa-chalkboard-teacher fa-2x mb-2"></i><br><small>Canvas</small>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- end of left side -->
+
+                                                    <!-- Right side -->
+                                                    <div class="col-12 col-lg-6 d-flex flex-column">
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Announcements
+                                                            </h2>
+                                                            <div class="card-body">
+                                                                <span id="announcements">There are no announcements at this time.</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Calendars
+                                                            </h2>
+                                                            <div class="card-body">
+
+                                                                <div class="row row-cols-1 row-cols-xl-2 g-3 g-lg-4">
+
+                                                                    <div class="col border-light mb-3">
+                                                                        <h2 class="h6 card-title">Academic Calendar</h2>
+                                                                        <div class="card-body p-0">
+                                                                            <p class="mb-1">The standard Academic Calendar consists of a Fall Semester, a Spring Semester, and an accelerated Summer Session.</p>
+                                                                            <p class="mb-0">
+                                                                                <a href="https://www.barberod.com" target="_blank">
+                                                                                    Academic Calendar<i class="fa-solid fa-external-link ms-2"></i>
+                                                                                </a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col border-light mb-3">
+                                                                        <h2 class="h6 card-title">Five-Term Tentative Institute Calendar</h2>
+                                                                        <div class="card-body p-0">
+                                                                            <p class="mb-1">Dates on the tentative five-term school calendar may be subject to change without notice.</p>
+                                                                            <p class="mb-0">
+                                                                                <a href="https://www.barberod.com" target="_blank">
+                                                                                    Five-Term Tentative Institute Calendar<i class="fa-solid fa-external-link ms-2"></i>
+                                                                                </a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col border-light mb-3">
+                                                                        <h2 class="h6 card-title">Final Exam Matrices</h2>
+                                                                        <div class="card-body p-0">
+                                                                            <p class="mb-1">See the matrix that determines the schedule of final examinations for a given academic term.</p>
+                                                                            <p class="mb-0">
+                                                                                <a href="https://www.barberod.com" target="_blank">
+                                                                                    Final Exam Matrices<i class="fa-solid fa-external-link ms-2"></i>
+                                                                                </a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col border-light mb-3">
+                                                                        <h2 class="h6 card-title">Campus Calendar</h2>
+                                                                        <div class="card-body p-0">
+                                                                            <p class="mb-1">The Campus Calendar features the comprehensive set of dates and events across a wide range of categories.</p>
+                                                                            <p class="mb-0">
+                                                                                <a href="https://www.barberod.com" target="_blank">
+                                                                                    Campus Calendar<i class="fa-solid fa-external-link ms-2"></i>
+                                                                                </a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card mb-3">
+                                                            <h2 class="card-header h6">
+                                                                Helpful Links
+                                                            </h2>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <div class="d-flex flex-column">
+                                                                            <a class="mb-2" href="https://registrar.gatech.edu/" target="_blank">Registrar's Office</a>
+                                                                            <a class="mb-2" href="https://registrar.gatech.edu/calendar" target="_blank">Academic Calendar</a>
+                                                                            <a class="mb-2" href="https://registrar.gatech.edu/registration" target="_blank">Registration</a>
+                                                                            <a class="mb-2" href="https://www.bursar.gatech.edu/" target="_blank">Bursar's Office</a>
+                                                                            <a class="mb-2" href="https://finaid.gatech.edu/" target="_blank">Financial Aid</a>
+                                                                            <a class="mb-2 mb-md-0" href="https://oie.gatech.edu/" target="_blank">International Education</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <div class="d-flex flex-column">
+                                                                            <a class="mb-2" href="https://admission.gatech.edu/" target="_blank">Undergraduate Admission</a>
+                                                                            <a class="mb-2" href="https://grad.gatech.edu" target="_blank">Graduate Education</a>
+                                                                            <a class="mb-2" href="https://studentlife.gatech.edu/" target="_blank">Student Life</a>
+                                                                            <a class="mb-2" href="https://housing.gatech.edu/" target="_blank">Housing</a>
+                                                                            <a class="mb-2" href="https://www.library.gatech.edu/" target="_blank">Library</a>
+                                                                            <a class="mb-2 mb-md-0" href="https://gatech.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=15054&catalogId=10001&langId=-1" target="_blank">Bookstore</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row clearfix">
+
+                                                            <div class="col-12 col-xl-6">
+                                                                <div class="card mb-3">
+                                                                    <h2 class="card-header h6">
+                                                                        Colleges and Instructional Sites
+                                                                    </h2>
+                                                                    <div class="card-body">
+                                                                        <div class="row">
+                                                                            <div class="col-12 col-sm-6 col-xl-12">
+                                                                                <div class="d-flex flex-column">
+                                                                                    <a class="mb-2" href="https://cc.gatech.edu/" target="_blank">College of Computing</a>
+                                                                                    <a class="mb-2" href="https://design.gatech.edu/" target="_blank">College of Design</a>
+                                                                                    <a class="mb-2" href="https://coe.gatech.edu/" target="_blank">College of Engineering</a>
+                                                                                    <a class="mb-2" href="https://cos.gatech.edu/" target="_blank">College of Sciences</a>
+                                                                                    <a class="mb-2" href="https://www.iac.gatech.edu/" target="_blank">Ivan Allen College of Liberal Arts</a>
+                                                                                    <a class="mb-2 mb-md-0" href="https://scheller.gatech.edu/" target="_blank">Scheller College of Business</a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-xl-12">
+                                                                                <div class="d-flex flex-column">
+                                                                                    <a class="mb-2" href="https://lorraine.gatech.edu/" target="_blank">Georgia Tech-Lorraine</a>
+                                                                                    <a class="mb-2" href="https://pe.gatech.edu/savannah-campus" target="_blank">Georgia Tech-Savannah</a>
+                                                                                    <a class="mb-2" href="http://www.shenzhen.gatech.edu/" target="_blank">Georgia Tech-Shenzhen</a>
+                                                                                    <a class="mb-2" href="https://pe.gatech.edu/georgia-tech-online" target="_blank">Georgia Tech Online</a>
+                                                                                    <a class="mb-2" href="https://pe.gatech.edu/" target="_blank">Professional Education</a>
+                                                                                    <a class="mb-2 mb-md-0" href="https://esl.gatech.edu/" target="_blank">The Language Institute</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="col-12 col-xl-6">
+                                                                <div class="card mb-3">
+                                                                    <h2 class="card-header h6">
+                                                                        Office 365
+                                                                    </h2>
+                                                                    <div class="card-body">
+                                                                        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-1 gy-0 gx-3">
+                                                                            <div class="col d-flex align-items-start flex-column">
+                                                                                <a href="https://outlook.office365.com/owa/?realm=gatech.edu" target="_blank" class="w-100 p-0 mb-2">Outlook</a>
+                                                                            </div>
+                                                                            <div class="col d-flex align-items-start flex-column">
+                                                                                <a href="https://www.office.com/launch/word?auth=2" target="_blank" class="w-100 p-0 mb-2">Word</a>
+                                                                            </div>
+                                                                            <div class="col d-flex align-items-start flex-column">
+                                                                                <a href="https://www.office.com/launch/excel?auth=2" target="_blank" class="w-100 p-0 mb-2">Excel</a>
+                                                                            </div>
+                                                                            <div class="col d-flex align-items-start flex-column">
+                                                                                <a href="https://www.office.com/launch/powerpoint?auth=2" target="_blank" class="w-100 p-0 mb-2">PowerPoint</a>
+                                                                            </div>
+                                                                            <div class="col d-flex align-items-start flex-column">
+                                                                                <a href="https://www.office.com/launch/onenote?auth=2" target="_blank" class="w-100 p-0 mb-2">OneNote</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- end of right side -->
+                                                </div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </main>
+
+                    <footer class="mt-auto">
+
+                        <div id="app-footer" class="container-fluid">
+                            <div class="row px-4">
+                                <div class="col-12 px-0 py-3 top-bordered">
+                                    <p class="text-muted"><small>Please bookmark this page only. Do not bookmark any pages beyond this point. URLs for subsequent pages are subject to change without notice.</small></p>
+                                    <p class="text-muted"><small>Notwithstanding any language to the contrary, nothing contained herein constitutes nor is intended to constitute an offer, inducement, promise, or contract of any kind. The data contained herein is for informational purposes only and is not represented to be error free. Any links to non-barberod information are provided as a courtesy. They are not intended to nor do they constitute an endorsement by barberod of the linked materials.</small></p>
+                                    <p class="text-muted mb-0"><small>Web app last modified June 27, 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="accent-footer" class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="org-footer" class="container-fluid px-5 py-3">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-3 pt-1">
+                                    <address class="left-bordered">
+                                        <strong>barberod</strong><br>
+                                        Midtown, Atlanta, GA 30332<br>
+                                        404.594.4542
+                                    </address>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-9 pt-1">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="left-bordered">
+                                                <p><a href="https://www.directory.gatech.edu/"
+                                                        target="_blank">Directory</a></p>
+                                                <p><a href="http://www.gatech.edu/emergency/" target="_blank">Emergency
+                                                        Information</a></p>
+                                                <p><a href="http://www.gatech.edu/legal/" target="_blank">Legal &amp;
+                                                        Privacy Information</a></p>
+                                                <p><a href="https://gbi.georgia.gov/human-trafficking-notice"
+                                                        target="_blank">Human Trafficking Notice</a></p>
+                                                <p><a href="https://titleix.gatech.edu/" target="_blank">Title IX/Sexual
+                                                        Misconduct</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="left-bordered">
+                                                <p><a href="http://www.gatech.edu/accessibility/"
+                                                        target="_blank">Accessibility</a></p>
+                                                <p><a href="http://www.gatech.edu/accountability/"
+                                                        target="_blank">Accountablility</a></p>
+                                                <p><a href="https://www.gatech.edu/accreditation/"
+                                                        target="_blank">Accreditation</a></p>
+                                                <p><a href="http://www.careers.gatech.edu/"
+                                                        target="_blank">Employment</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img class="img-fluid float-right p-0 mb-3"
+                                                        style="max-width: 200px;"
+                                                        src="../img/logo2.svg"
+                                                        alt="barberod" loading="lazy">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="float-right copyr">©&nbsp;barberod
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </footer>
+
+                    <button onclick="scrollToTop()" id="scroll-top" class="scroll-top is-hidden">
+                        <i class="fa-solid fa-angle-up fa-3x"></i>
+                    </button>
+
+                </div>
+                <!-- end of main -->
+            </div>
         </div>
-      </div>
-
-      <hr class="col-1 my-5 mx-0">
-
-      <h2>Guides</h2>
-      <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-      <ul class="icon-list">
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap quick start guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/vite/">Bootstrap Vite guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/build-tools/">Contributing to Bootstrap</a></li>
-      </ul>
-
-      <hr class="mt-5 mb-4">
-
-      <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
     </div>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/scroll.js"></script>
 
-    <script type="module" src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
