@@ -91,6 +91,10 @@ $color-mode-type: data;
   .title.border-bottom {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500) !important;
   }
+
+  .navbar-toggler:hover {
+    background-color: var(--bs-gray-200);
+  }
 }
 
 @include color-mode(dark) {
@@ -127,6 +131,10 @@ $color-mode-type: data;
   .card-body {
     color: var(--bs-gray-100);
     background-color: var(--bs-gray-900);
+  }
+
+  .navbar-toggler:hover {
+    background-color: var(--bs-gray-800);
   }
 }
 
@@ -345,4 +353,12 @@ a {
   #accent-logo {
     background-image: url("../img/logo2-dark.svg");
   }
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("../img/xmark.svg");
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("../img/hamburger.svg");
 }
