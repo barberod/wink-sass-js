@@ -511,7 +511,8 @@
 
                     </footer>
 
-                    <div class="container-fluid">
+                    <!-- Demo Lazy Loading -->
+                    <div class="container-fluid mb-5" id="demo-lazy-loading">
                         <div class="row">
                             <div class="col-12">
                                 <h2>Demo lazy loading</h2>
@@ -539,6 +540,166 @@
                             </div>
                         </div>
                     </div>
+                    <!-- /#demo-lazy-loading -->
+
+                    <!-- Demo Table -->
+                    <div class="container-fluid mb-5" id="demo-table">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="title border-bottom mb-3 pb-3">Demo Table</h2>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 mb-3">
+                            <div class="col text-end">
+                                <p class="mb-0">Showing 4 of 9876</p>
+                            </div>
+                        </div>
+
+                        <form class="row mb-3">
+                            <div class="col-8 col-md-6 col-lg-4 col-xl-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for" aria-describedby="search-button">
+                                    <button class="btn btn-outline-primary" type="button" id="search-button">Find</button>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <button class="btn btn-outline-primary" type="button" id="reset-button">Reset</button>
+                            </div>
+                        </form>
+
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Symbol</th>
+                                            <th scope="col">
+                                                <a href="#" sort="asc">Created</a>
+                                            </th>
+                                            <th scope="col">Submitter</th>
+                                            <th scope="col">Assignee</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">City</th>
+                                            <th scope="col">
+                                                <a href="#" sort="desc">State</a>
+                                            </th>
+                                            <th scope="col">University</th>
+                                            <th scope="col">Actions</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td><span class="text-danger"><i class="fa-solid fa-circle-exclamation"></i></td>
+                                                <td>2023-06-28<br><span class="text-muted">2:53 PM EDT</span></td>
+                                                <td>Bobby Robertson<br><span class="text-muted">987654321</span></td>
+                                                <td>Johnny Johnson<br><span class="text-muted">jjohnson404</span></td>
+                                                <td>In Process</td>
+                                                <td>Chicago</td>
+                                                <td>IL</td>
+                                                <td>University of Illinois-Urbana-Champa...
+                                                <td>
+                                                    <a class="me-2" href="#">See Details</a>
+                                                    <a class="me-2" href="#">Edit</a>
+                                                    <a class="me-2" href="#">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td></td>
+                                                <td>2023-06-04<br><span class="text-muted">11:48 AM EDT</span></td>
+                                                <td>Judy <span class="bg-warning">Jones</span><br><span class="text-muted">989898989</span></td>
+                                                <td>Mandy Miller<br><span class="text-muted">mmiller90</span></td>
+                                                <td>In Process</td>
+                                                <td>Boston</td>
+                                                <td>MA</td>
+                                                <td>Boston University
+                                                <td>
+                                                    <a class="me-2" href="#">See Details</a>
+                                                    <a class="me-2" href="#">Edit</a>
+                                                    <a class="me-2" href="#">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td><span class="text-warning"><i class="fa-solid fa-circle-question"></i></td>
+                                                <td>2023-05-30<br><span class="text-muted">4:01 PM EDT</span></td>
+                                                <td>Ricky Richardson<br><span class="text-muted">979797979</span></td>
+                                                <td>Frank Franklin<br><span class="text-muted">ffranklin76</span></td>
+                                                <td>Completed</td>
+                                                <td>Los Angeles</td>
+                                                <td>CA</td>
+                                                <td>University of California-Los Angeles
+                                                <td>
+                                                    <a class="me-2" href="#">See Details</a>
+                                                    <a class="me-2" href="#">Edit</a>
+                                                    <a class="me-2" href="#">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td><span class="text-success"><i class="fa-solid fa-circle-check"></i></td>
+                                                <td>2023-04-04<br><span class="text-muted">7:36 AM EDT</span></td>
+                                                <td>Tanya Tucker<br><span class="text-muted">969696969</span></td>
+                                                <td>Sarah Simpson<br><span class="text-muted">ssimpson321</span></td>
+                                                <td>Archived</td>
+                                                <td>Carollton</td>
+                                                <td>GA</td>
+                                                <td>University of West Georgia
+                                                <td>
+                                                    <a class="me-2" href="#">See Details</a>
+                                                    <a class="me-2" href="#">Edit</a>
+                                                    <a class="me-2" href="#">Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /#demo-table -->
+
+                    <!-- Demo Alerts -->
+                    <div class="container-fluid mb-5" id="demo-alerts">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Demo alerts</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <div class="alert alert-primary" role="alert">
+                                A simple primary alert—check it out!
+                                </div>
+                                <div class="alert alert-secondary" role="alert">
+                                A simple secondary alert—check it out!
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                A simple success alert—check it out!
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                A simple danger alert—check it out!
+                                </div>
+                                <div class="alert alert-warning" role="alert">
+                                A simple warning alert—check it out!
+                                </div>
+                                <div class="alert alert-info" role="alert">
+                                A simple info alert—check it out!
+                                </div>
+                                <div class="alert alert-light" role="alert">
+                                A simple light alert—check it out!
+                                </div>
+                                <div class="alert alert-dark" role="alert">
+                                A simple dark alert—check it out!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /#demo-alerts -->
 
                     <!-- Back to Top -->
                     <button onclick="scrollToTop()" id="scroll-top" class="scroll-top" style="display: none;">

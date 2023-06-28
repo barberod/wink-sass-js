@@ -115,7 +115,7 @@ $color-mode-type: data;
   }
 
   .text-muted {
-    color: var(--bs-gray-300) !important;
+    color: var(--bs-gray-500) !important;
   }
 
   .card {
@@ -135,6 +135,13 @@ $color-mode-type: data;
 
   .navbar-toggler:hover {
     background-color: var(--bs-gray-800);
+  }
+
+  .table {
+    --bs-table-color: var(--bs-white);
+    --bs-table-striped-color: var(--bs-white);
+    --bs-table-active-color: var(--bs-white);
+    --bs-table-hover-color: var(--bs-white);
   }
 }
 
@@ -197,6 +204,27 @@ body {
   padding: 1.5rem;
 }
 */
+
+table th a[sort="asc"]:after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0d8";
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+table th a[sort="desc"]:after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0d7";
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
 
 a {
   text-decoration: none;
@@ -262,7 +290,6 @@ a {
 .is-visible {
   display: block;
 }
-
 .is-hidden {
   display: none;
 }
@@ -361,4 +388,9 @@ a {
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
   background-image: url("../img/hamburger.svg");
+}
+
+.bg-warning {
+  --bs-bg-opacity: .5;
+  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
 }
