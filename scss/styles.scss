@@ -199,10 +199,10 @@ a {
 }
 
 #navbar-main {
-  height: 6rem;
+  height: 5rem;
 }
 #navbar-logo-area {
-  height: 6rem;
+  height: 5rem;
   display: block;
   background-color: transparent;
   background-image: url("../img/logo.svg");
@@ -213,7 +213,7 @@ a {
 @include media-breakpoint-down(md) {
   #navbar-main,
   #navbar-logo-area {
-    height: 5rem;
+    height: 4rem;
   }
 }
 @include media-breakpoint-down(sm) {
