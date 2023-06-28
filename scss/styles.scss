@@ -68,13 +68,67 @@ $breadcrumb-active-color: $gray-800;
 $font-family-sans-serif: "Segoe UI", "Segoe UI Web (West European)", "Selawk", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 $body-color: $gray-800;
 $navbar-light-toggler-border-color: rgba($black, .3);
-$border-color: $gray-400;
-$card-border-color: $gray-400;
+$border-color: $gray-500;
+$card-border-color: $gray-500;
 $pagination-border-color: $gray-400;
 $list-group-border-color: $gray-400;
 $link-hover-color: darken($blue, 20%);
 $breadcrumb-padding-y: 0.25rem;
 $breadcrumb-item-padding: 0.5rem;
+
+$color-mode-type: data;
+
+@include color-mode(light) {
+  body {
+    background-color: var(--bs-gray-100);
+  }
+
+  header.navbar-main,
+  .sidebar {
+    background-color: var(--bs-white);
+  }
+
+  .title.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500) !important;
+  }
+}
+
+@include color-mode(dark) {
+  body {
+    color: var(--bs-gray-100);
+    background-color: var(--bs-gray-800);
+  }
+
+  header.navbar-main {
+    background-color: var(--bs-gray-900);
+  }
+  .sidebar {
+    background-color: var(--bs-gray-900);
+  }
+
+  .title.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-600) !important;
+  }
+
+  .text-muted {
+    color: var(--bs-gray-300) !important;
+  }
+
+  .card {
+    border: var(--bs-card-border-width) solid var(--bs-gray-600);
+  }
+
+  .card-header {
+    color: var(--bs-gray-100);
+    background-color: var(--bs-gray-900);
+    border-bottom: var(--bs-card-border-width) solid var(--bs-gray-600);
+  }
+
+  .card-body {
+    color: var(--bs-gray-100);
+    background-color: var(--bs-gray-900);
+  }
+}
 
 // Required
 /*
@@ -162,28 +216,6 @@ a {
   width: 100%;
 }
 
-.scroll-top {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 99;
-  outline: none;
-  color: #ffffff;
-  background-color: rgba(0, 120, 212,.65);
-  border: 0px solid transparent;
-  cursor: pointer;
-  padding: .65rem 1rem;
-  border-radius: .2rem;
-}
-
-.is-visible {
-  display: block;
-}
-
-.is-hidden {
-  display: none;
-}
-
 .icon-link {
   display: block;
 }
@@ -195,6 +227,72 @@ a {
 @include media-breakpoint-down(sm) {
   .icon-link {
     display: block;
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  height: 3.5rem;
+  width: 3.5rem;
+  bottom: 3.5rem;
+  right: 1.5rem;
+  z-index: 99;
+  outline: none;
+  color: #ffffff;
+  background-color: rgba(0, 120, 212,.55);
+  border: 0px solid transparent;
+  cursor: pointer;
+  padding: .65rem 0;
+  border-radius: .2rem;
+  margin: 0 auto;
+}
+.scroll-top:focus,
+.scroll-top:hover {
+  background-color: rgba(0, 120, 212,.85);
+}
+
+.is-visible {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.bd-mode-toggle {
+  position: fixed;
+  height: 2rem;
+  width: 3.5rem;
+  bottom: 1rem;
+  right: 1.5rem;
+  z-index: 98;
+  outline: none;
+  margin: 0 auto;
+}
+.bd-mode-toggle .btn {
+  width: 100%;
+  color: rgba(0, 120, 212, 1);
+  background-color: transparent;
+  border: 0px solid transparent;
+  cursor: pointer;
+  border-radius: .2rem;
+}
+.bd-mode-toggle .btn:hover {
+  color: #ffffff;
+  background-color: rgba(0, 120, 212,.85);
+}
+.bd-mode-toggle button.dropdown-toggle svg use {
+  fill: rgba(0, 120, 212, 1);
+}
+.bd-mode-toggle button.dropdown-toggle:hover svg use {
+  fill: #ffffff;
+}
+.bd-mode-toggle button.dropdown-item svg use {
+  fill: #323130;
+}
+@include color-mode(dark) {
+  .bd-mode-toggle button.dropdown-item svg use {
+    fill: #ffffff;
   }
 }
 
@@ -228,4 +326,23 @@ a {
 
 #navbar-site-name {
   font-family: Abel, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+#accent-logo {
+  height: 6rem;
+  display: block;
+  background-color: transparent;
+  background-image: url("../img/logo2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center, 50%, 50%;
+}
+
+@include color-mode(dark) {
+  #navbar-logo-area {
+    background-image: url("../img/logo-dark.svg");
+  }
+  #accent-logo {
+    background-image: url("../img/logo2-dark.svg");
+  }
 }

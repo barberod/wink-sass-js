@@ -24,14 +24,36 @@ function checkPosition() {
     let windowY = window.scrollY;
     if (windowY < scrollPos && window.pageYOffset > 400) {
         // Scrolling UP
-        nav.classList.add('is-visible');
-        nav.classList.remove('is-hidden');
+        if (nav.style.display != 'block') {
+            fadeIn();
+        }
     } else {
         // Scrolling DOWN
-        nav.classList.add('is-hidden');
-        nav.classList.remove('is-visible');
+        fadeOut();
     }
     scrollPos = windowY;
 }
+
+function fadeIn() {
+    nav.style.opacity = 0;
+    nav.style.display = "block";
+    (function fade() {
+        var val = parseFloat(nav.style.opacity);
+        if (!((val += 0.05) > 1)) {
+            nav.style.opacity = val;
+            requestAnimationFrame(fade);
+        }
+    })();
+};
+
+function fadeOut() {
+    (function fade() {
+        if ((nav.style.opacity -= 0.002) < 0) {
+            nav.style.display = "none";
+        } else {
+            requestAnimationFrame(fade);
+        }
+    })();
+};
 
 window.addEventListener('scroll', debounce(checkPosition));
