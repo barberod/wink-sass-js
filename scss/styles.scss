@@ -59,12 +59,9 @@ $danger: $red;
 $light: $gray-100;
 $dark: $gray-800;
 $navbar-dark-hover-color: rgba($white,1);
-$breadcrumb-divider: quote(">");
 $enable-rounded: false;
 $border-radius-base: 0;
 $body-bg: $gray-100;
-$breadcrumb-divider-color: $gray-800;
-$breadcrumb-active-color: $gray-800;
 $font-family-sans-serif: "Segoe UI", "Segoe UI Web (West European)", "Selawk", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 $body-color: $gray-800;
 $navbar-light-toggler-border-color: rgba($black, .3);
@@ -73,8 +70,8 @@ $card-border-color: $gray-500;
 $pagination-border-color: $gray-400;
 $list-group-border-color: $gray-400;
 $link-hover-color: darken($blue, 20%);
-$breadcrumb-padding-y: 0.25rem;
-$breadcrumb-item-padding: 0.5rem;
+$breadcrumb-divider-color: $gray-800;
+$breadcrumb-active-color: $gray-800;
 
 $color-mode-type: data;
 
@@ -153,6 +150,13 @@ $color-mode-type: data;
   .btn-outline-dark:not(:hover),
   .btn-outline-light:not(:hover) {
     background-color: var(--bs-gray-900);
+  }
+
+  .breadcrumb-item.active {
+    color: var(--bs-gray-500);
+  }
+  .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-gray-500);
   }
 }
 
