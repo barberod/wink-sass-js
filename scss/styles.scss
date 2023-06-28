@@ -143,6 +143,17 @@ $color-mode-type: data;
     --bs-table-active-color: var(--bs-white);
     --bs-table-hover-color: var(--bs-white);
   }
+
+  .btn-outline-primary:not(:hover),
+  .btn-outline-secondary:not(:hover),
+  .btn-outline-success:not(:hover),
+  .btn-outline-danger:not(:hover),
+  .btn-outline-warning:not(:hover),
+  .btn-outline-info:not(:hover),
+  .btn-outline-dark:not(:hover),
+  .btn-outline-light:not(:hover) {
+    background-color: var(--bs-gray-900);
+  }
 }
 
 // Required
