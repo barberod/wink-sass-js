@@ -1,6 +1,6 @@
 # wink-sass-js
 
-Generates/maintains Bootstrap files suitable for business portal.
+Generates and maintains Bootstrap files suitable for business portal.
 
 ## Basis
 
