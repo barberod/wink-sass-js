@@ -25,4 +25,4 @@ LICENSE text eol=lf
 *.js linguist-detectable=true
 *.html linguist-detectable=false
 *.scss linguist-detectable=true
-*.svg linguist-detectable=true
+*.svg linguist-detectable=false
