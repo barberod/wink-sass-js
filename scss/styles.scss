@@ -69,7 +69,7 @@ $border-color: $gray-500;
 $card-border-color: $gray-500;
 $pagination-border-color: $gray-400;
 $list-group-border-color: $gray-400;
-$link-hover-color: darken($blue, 20%);
+$link-hover-color: darken($blue, 40%);
 $breadcrumb-divider-color: $gray-800;
 $breadcrumb-active-color: $gray-800;
 
@@ -89,8 +89,15 @@ $color-mode-type: data;
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500) !important;
   }
 
-  .nav-link {
+  button.nav-link.active {
+    background-color: var(--bs-dark);
+  }
+  button.nav-link {
     background-color: var(--bs-gray-200);
+  }
+  .nav-pills .nav-link:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
   }
 
   .navbar-toggler:hover {
@@ -116,8 +123,15 @@ $color-mode-type: data;
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-600) !important;
   }
 
-  .nav-link {
+  button.nav-link.active {
+    background-color: var(--bs-primary);
+  }
+  button.nav-link {
     background-color: var(--bs-gray-700);
+  }
+
+  .nav-pills .nav-link:hover {
+    color: var(--bs-light);
   }
 
   .text-muted {
