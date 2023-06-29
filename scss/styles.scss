@@ -89,6 +89,10 @@ $color-mode-type: data;
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500) !important;
   }
 
+  .nav-link {
+    background-color: var(--bs-gray-200);
+  }
+
   .navbar-toggler:hover {
     background-color: var(--bs-gray-200);
   }
@@ -103,12 +107,17 @@ $color-mode-type: data;
   header.navbar-main {
     background-color: var(--bs-gray-900);
   }
+
   .sidebar {
     background-color: var(--bs-gray-900);
   }
 
   .title.border-bottom {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-600) !important;
+  }
+
+  .nav-link {
+    background-color: var(--bs-gray-700);
   }
 
   .text-muted {
