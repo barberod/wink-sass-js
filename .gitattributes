@@ -22,8 +22,9 @@ LICENSE text eol=lf
 *.png binary
 
 # Control linguist language detection
-*.js linguist-detectable=true
+*.css linguist-detectable=false
 *.html linguist-detectable=false
+*.js linguist-detectable=true
 *.scss linguist-detectable=true
 *.svg linguist-detectable=false
 
