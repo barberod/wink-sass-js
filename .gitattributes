@@ -26,3 +26,15 @@ LICENSE text eol=lf
 *.html linguist-detectable=false
 *.scss linguist-detectable=true
 *.svg linguist-detectable=false
+
+# Keep some files out of release
+/scss export-ignore
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+.npmrc export-ignore
+.stylelintrc.json export-ignore
+LICENSE export-ignore
+package-lock.json
+package.json
+README.md
