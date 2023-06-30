@@ -35,7 +35,6 @@ LICENSE text eol=lf
 .gitignore export-ignore
 .npmrc export-ignore
 .stylelintrc.json export-ignore
-LICENSE export-ignore
-package-lock.json
-package.json
-README.md
+package-lock.json export-ignore
+package.json export-ignore
+README.md export-ignore
