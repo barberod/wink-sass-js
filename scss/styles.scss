@@ -77,91 +77,91 @@ $color-mode-type: data;
 
 @include color-mode(light) {
   body {
-    background-color: var(--bs-gray-100);
+    background-color: $gray-100;
   }
 
   header.navbar-main,
   .sidebar {
-    background-color: var(--bs-white);
+    background-color: $white;
   }
 
   .title.border-bottom {
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500) !important;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) $gray-500 !important;
   }
 
   button.nav-link.active {
-    background-color: var(--bs-dark);
+    background-color: $dark;
   }
   button.nav-link {
-    background-color: var(--bs-gray-200);
+    background-color: $gray-200;
   }
   .nav-pills .nav-link:hover {
-    background-color: var(--bs-primary);
-    color: var(--bs-white);
+    background-color: $primary;
+    color: $white;
   }
 
   .navbar-toggler:hover {
-    background-color: var(--bs-gray-200);
+    background-color: $gray-200;
   }
 }
 
 @include color-mode(dark) {
   body {
-    color: var(--bs-gray-100);
-    background-color: var(--bs-gray-800);
+    color: $gray-100;
+    background-color: $gray-800;
   }
 
   header.navbar-main {
-    background-color: var(--bs-gray-900);
+    background-color: $gray-900;
   }
 
   .sidebar {
-    background-color: var(--bs-gray-900);
+    background-color: $gray-900;
   }
 
   .title.border-bottom {
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-600) !important;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) $gray-600 !important;
   }
 
   button.nav-link.active {
-    background-color: var(--bs-primary);
+    background-color: $primary;
   }
   button.nav-link {
-    background-color: var(--bs-gray-700);
+    background-color: $gray-700;
   }
 
   .nav-pills .nav-link:hover {
-    color: var(--bs-light);
+    color: $light;
   }
 
   .text-muted {
-    color: var(--bs-gray-500) !important;
+    color: $gray-500 !important;
   }
 
   .card {
-    border: var(--bs-card-border-width) solid var(--bs-gray-600);
+    border: var(--bs-card-border-width) solid $gray-600;
   }
 
   .card-header {
-    color: var(--bs-gray-100);
-    background-color: var(--bs-gray-900);
-    border-bottom: var(--bs-card-border-width) solid var(--bs-gray-600);
+    color: $gray-100;
+    background-color: $gray-900;
+    border-bottom: var(--bs-card-border-width) solid $gray-600;
   }
 
   .card-body {
-    color: var(--bs-gray-100);
-    background-color: var(--bs-gray-900);
+    color: $gray-100;
+    background-color: $gray-900;
   }
 
   .navbar-toggler:hover {
-    background-color: var(--bs-gray-800);
+    background-color: $gray-800;
   }
 
   .table {
-    --bs-table-color: var(--bs-white);
-    --bs-table-striped-color: var(--bs-white);
-    --bs-table-active-color: var(--bs-white);
-    --bs-table-hover-color: var(--bs-white);
+    --bs-table-color: $white;
+    --bs-table-striped-color: $white;
+    --bs-table-active-color: $white;
+    --bs-table-hover-color: $white;
   }
 
   .btn-outline-primary:not(:hover),
@@ -172,14 +172,14 @@ $color-mode-type: data;
   .btn-outline-info:not(:hover),
   .btn-outline-dark:not(:hover),
   .btn-outline-light:not(:hover) {
-    background-color: var(--bs-gray-900);
+    background-color: $gray-900;
   }
 
   .breadcrumb-item.active {
-    color: var(--bs-gray-500);
+    color: $gray-500;
   }
   .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--bs-gray-500);
+    color: $gray-500;
   }
 }
 
